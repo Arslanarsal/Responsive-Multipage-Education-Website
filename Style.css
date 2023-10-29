@@ -10,7 +10,7 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-/* global Fonts */
+/*---------------->>>>>>>>>>>>>>> global Fonts */
 h1 {
   font-size: 3.5rem;
   font-weight: 700;
@@ -27,7 +27,7 @@ h6 {
   color: rgb(24, 24, 49);
 }
 
-/* Navigation */
+/*------------->>>>>>>>>>>>>>>> Navigation */
 
 nav {
   display: flex;
@@ -39,11 +39,28 @@ nav {
   position: fixed;
   width: 100%;
   background-color: #fff;
+  z-index: 999;
 }
 
 nav img {
   cursor: pointer;
   width: 150px;
+}
+
+nav .navigation {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#menu-btn {
+  height: 30px;
+  width: 30px;
+  display: none;
+}
+
+#menu-close {
+  display: none;
 }
 
 nav .navigation ul {
@@ -67,7 +84,7 @@ nav .navigation ul li a:hover {
   color: #fdc93b;
 }
 
-/* Home */
+/* ----------->>>>>>>>>>>>>>>Home */
 #home {
   background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)),
     url("images/back.jpg");
@@ -114,17 +131,17 @@ nav .navigation ul li a:hover {
   transition: 0.4s ease;
 }
 
+#home a.blue:hover {
+  color: rgb(21, 21, 100);
+  background-color: #fff;
+}
+
 #home a.yellow {
   color: #fff;
   background-color: #fdc93b;
   transition: 0.4s ease;
 }
 #home a.yellow:hover {
-  color: rgb(21, 21, 100);
-  background-color: #fff;
-}
-
-#home a.blue:hover {
   color: rgb(21, 21, 100);
   background-color: #fff;
 }
@@ -214,4 +231,277 @@ nav .navigation ul li a:hover {
   position: absolute;
   right: 15px;
   bottom: 100px;
+}
+
+/* ------------------>>>>>>>>>>>>>>>>>Registration */
+
+#registration {
+  margin-top: 5vw;
+  padding: 6vw 8vw 6vw 8vw;
+  background-image: linear-gradient(
+      rgba(99, 112, 168, 0.5),
+      rgba(81, 91, 233, 0.5)
+    ),
+    url(images/signup.jpg);
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.remainder {
+  color: #fff;
+}
+
+.remainder h1 {
+  color: #fff;
+}
+
+#registration .remainder .time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+
+#registration .data {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.25);
+  padding: 13px 33px;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.18);
+  margin: 0 5px 10px 5px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+#registration .form {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 37px 48px;
+}
+
+#registration .form input {
+  padding: 15px 76px 15px 6px;
+  margin-top: 30px;
+}
+#registration .form input::placeholder {
+  color: #413c3c;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+#registration .btn {
+  margin-top: 26px;
+}
+
+#registration a.yellow {
+  color: #fff;
+  background-color: #fdc93b;
+  transition: 0.4s ease;
+}
+#registration a.yellow:hover {
+  color: rgb(21, 21, 100);
+  background-color: #fff;
+}
+
+/* ------------->>>>>>>>>>>>>>>>>>profiles */
+#profile {
+  padding: 8vw 8vw 0;
+}
+
+#profile .profirst {
+  text-align: center;
+}
+#profile .profiles {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 6vw 2vw;
+}
+
+#profile .profile {
+  text-align: center;
+}
+
+#profile .icon {
+  margin-top: 13px;
+}
+
+#profile .icon i {
+  padding: 10px 13px;
+  border: 1px solid black;
+  transition: 0.4s ease;
+}
+
+#profile .icon i:hover {
+  color: white;
+  background-color: blue;
+}
+
+#profile .icon i {
+  margin: 0 2px;
+}
+
+/*--------------->>>>>>>>>>>>>> Footer */
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8vw;
+  background-color: #101c32;
+  color: #000000;
+}
+
+footer .footer-col {
+  padding-bottom: 40px;
+}
+
+footer h3 {
+  color: rgb(241, 240, 245);
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+footer .footer-col li {
+  list-style: none;
+  color: #7b838a;
+  padding: 10px 0px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+footer .footer-col li:hover {
+  color: rgb(241, 240, 245);
+}
+
+footer p {
+  color: #7b838a;
+}
+
+footer .subscribe {
+  margin-top: 20px;
+}
+
+footer input {
+  width: 220px;
+  padding: 15px 12px;
+  background: #334f6c;
+  border: none;
+  outline: none;
+  color: #fff;
+}
+
+footer .subscribe a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 12px 15px;
+  font-weight: 600;
+  background-color: #fff;
+}
+
+footer .subscribe a.yellow {
+  color: #2c2c2c;
+  background-color: #fdc93b;
+  transition: 0.4s ease;
+}
+footer .subscribe a.yellow:hover {
+  color: rgb(21, 21, 100);
+  background-color: #fff;
+}
+
+footer .copytright {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+footer .icon i {
+  padding: 10px 13px;
+  border: 1px solid black;
+  transition: 0.4s ease;
+  margin: 0 2px;
+  color: #fff;
+  background-color: #5f7185;
+}
+
+footer .icon i:hover {
+  color: #2c2c2c;
+  background-color: #fdc93b;
+}
+
+footer .copytright p {
+  color: #fff;
+}
+
+/* Respoonsive Use Media Quarys */
+
+@media (max-width: 769px) {
+  nav {
+    padding: 15px 15px;
+  }
+  nav img {
+    width: 130px;
+  }
+  #menu-btn {
+    display: initial;
+  }
+
+  #menu-close {
+    display: initial;
+    font-size: 1.6rem;
+    color: #fff;
+    padding: 30px 0 20px 20px;
+  }
+  nav .navigation ul {
+    position: absolute;
+    top: 0;
+    right: -220px;
+    width: 220px;
+    height: 100vh;
+    background-color: rgb(17, 20, 104, 0.45);
+    backdrop-filter: blur(0.5px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    transition: 0.3s ease;
+  }
+
+  nav .navigation ul.active {
+    right: 0;
+  }
+
+  nav .navigation ul li {
+    padding: 20px 0 20px 40px;
+    margin-left: 0;
+  }
+
+  nav .navigation ul li a {
+    color: #fff;
+  }
+
+  #home h2 {
+    font-size: 1.7rem;
+  }
+  #home p {
+    width: 90%;
+  }
+  #course {
+    padding: 8vw 0vw 0 0vw;
+  }
 }

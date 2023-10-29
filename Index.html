@@ -11,6 +11,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
     <title>TechEduca</title>
   </head>
   <body>
@@ -19,12 +24,14 @@
       <img src="images/logo.svg" alt="" />
       <div class="navigation">
         <ul>
+          <i id="menu-close" class="fa-solid fa-xmark"></i>
           <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Blog</a></li>
           <li><a href="#">Courses</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
+        <img id="menu-btn" src="images/menu.png" alt="" />
       </div>
     </nav>
 
@@ -196,7 +203,160 @@
       </div>
     </section>
 
-    
+    <!-- Resgistration -->
+    <section id="registration">
+      <div class="remainder">
+        <p>Get 100 online courses for free</p>
+        <h1>Register To Get It</h1>
+        <div class="time">
+          <div class="data">
+            18 <br />
+            Days
+          </div>
+          <div class="data">
+            23 <br />
+            Hours
+          </div>
+          <div class="data">
+            06 <br />
+            Minutes
+          </div>
+          <div class="data">
+            58 <br />
+            Seconds
+          </div>
+        </div>
+      </div>
+
+      <div class="form">
+        <h3>Create Free Account NOW</h3>
+        <input type="text" placeholder="Name *" required />
+        <input type="email" placeholder="Email Address *" required />
+        <input type="phone" placeholder="Phone Number *" required />
+        <div class="btn">
+          <a class="yellow" href="#">Submit Form</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Profile -->
+    <section id="profile">
+      <div class="profirst">
+        <h1>Community Experts</h1>
+        <p>
+          “Anyone can give up, it's the easiest thing in the world to do. But to
+          hold it together when everyone else would understand if you fell
+          apart, that's true strength.” - John Dewey
+        </p>
+      </div>
+
+      <div class="profiles">
+        <div class="profile">
+          <img src="images/pro1.webp" alt="" />
+          <div class="detail">
+            <h6>Ema Irnik</h6>
+            <span>Python & Algorithm Expert</span>
+            <div class="icon">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="profile">
+          <img src="images/pro2.webp" alt="" />
+          <div class="detail">
+            <h6>Jason</h6>
+            <span>Data Analysis Expert</span>
+            <div class="icon">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="profile">
+          <img src="images/pro3.webp" alt="" />
+          <div class="detail">
+            <h6>Maalik</h6>
+            <span>Full Stack Devloper</span>
+            <div class="icon">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="profile">
+          <img src="images/pro4.webp" alt="" />
+          <div class="detail">
+            <h6>Jennifer</h6>
+            <span>Design Expert</span>
+            <div class="icon">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-col">
+        <h3>Top Products</h3>
+        <li>Manage Reputation</li>
+        <li>Power Tools</li>
+        <li>Managed Website</li>
+        <li>Marketing Service</li>
+      </div>
+
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <li>Jobs</li>
+        <li>Brand Assets</li>
+        <li>Investor Relations</li>
+        <li>Terms of Service</li>
+      </div>
+
+      <div class="footer-col">
+        <h3>Features</h3>
+        <li>Manage Reputation</li>
+        <li>Power Tools</li>
+        <li>Managed Website</li>
+        <li>Marketing Service</li>
+      </div>
+
+      <div class="footer-col">
+        <h3>Resources</h3>
+        <li>Guides</li>
+        <li>Research</li>
+        <li>Experts</li>
+        <li>Marketing Service</li>
+      </div>
+
+      <div class="footer-col">
+        <h3>Newsletter</h3>
+        <p>You can trust us we only promo offers</p>
+        <div class="subscribe">
+          <input type="text" placeholder="Your Email address " />
+          <a href="#" class="yellow">SUBSCRIBE</a>
+        </div>
+      </div>
+
+      <div class="copytright">
+        <p>Copyright @2021 All rights reserved</p>
+        <div class="icon">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-linkedin"></i>
+        </div>
+      </div>
+    </footer>
 
     <script src="script.js"></script>
   </body>
